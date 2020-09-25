@@ -1,0 +1,58 @@
+.side-drawer {
+  height: 100%;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 400px;
+  z-index: 100;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+.drawer-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  li{
+    padding: 10px;
+    color: gray;
+    a{
+      color: gray;
+    }
+  }
+}
+.drawer-icon{
+  font-size: 30px;
+  color: var(--color-primary);
+}
+.side-drawer-head{
+  height: 80px;
+  padding: 15px;
+  background: rebeccapurple;
+}
+.theme-transparent-button-head{
+  color: white;
+  margin-left: 59px;
+  border: 1px solid white;
+  background: transparent;
+  padding: 8px;
+  border-radius: 5px;
+}
+.backdrop{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 99;
+  opacity: 1;
+}
+.side-drawer.open {
+  transform: translateX(0);
+}
+
+@media (min-width: 1025px) {
+  .side-drawer{display: none}
+}

@@ -1,0 +1,19 @@
+.form-control-line {
+  height: 40px;
+  width: 100%;
+  background-color: var(--color-white) !important;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.error-border{
+  border-bottom: 1px solid var(--color-danger) !important;
+}
+.custom-input-box:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  background: transparent;
+  box-shadow: none;
+  border-bottom: 1px solid var(--color-primary) !important;
+}
